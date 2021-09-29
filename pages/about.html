@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--meta tags are for conveying important information to the search engine and users --> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--allows you to control how the webpage is displayed on start up.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!--links to bulma css framework.-->
+    <title>Document</title> <!--should always be last.-->
+</head>
+<body>
+    
+        <div class="container">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="../images/yolked.png" width="112" height="28">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{'is-active': navBarIsActive}" @click="navBarIsActive = !navBarIsActive">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Info
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Exercises
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Biceps
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Triceps
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Legs
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Chest
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Back
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Compound/Fullbody
+                    </a>
+                  </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Diet
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Calorie Counter
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Healthy Snacks
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Healthy Recipes
+                    </a>
+                    
+                  </div>
+                </div>
+
+                <a class="navbar-item">
+                  Profile
+                </a>
+
+                <a class="navbar-item">
+                  Share
+                </a>
+
+
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-warning">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+      
+        
+
+    
+</body>
+</html>
