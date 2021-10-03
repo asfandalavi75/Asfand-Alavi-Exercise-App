@@ -30,20 +30,17 @@
           
             <div id="nav-links" class="navbar-menu">
               <div class="navbar-start">
-                <a class="navbar-item" active-class="is-active">
+                <a class="navbar-item is-active">
                   <router-link to="/home">Home</router-link>
                 </a>
           
-                <a class="navbar-item " active-class="is-active">
-                  <router-link to="/about">About</router-link>
+                <a class="navbar-item is-active">
+                  <router-link to="/foo"></router-link>
                 </a>
-                <router-view></router-view>
           
                 <a class="navbar-item">
-                    Exercises
-                  </a>
-          
-                
+                  Exercises
+                </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
@@ -76,7 +73,6 @@
 
 
               </div>
-              
           
               <div class="navbar-end">
                 <div class="navbar-item">
@@ -99,6 +95,47 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
+<script>
+  import Home from './index.html'
+  import calcount from './pages/calorieCounter'
+  import About from './pages/about.html'
+
+
+      const Foo = { template: '<div>foo</div>' }
+      const Bar = { template: '<div>bar</div>' }
+
+      // 2. Define some routes
+      // Each route should map to a component. The "component" can
+      // either be an actual component constructor created via
+      // `Vue.extend()`, or just a component options object.
+      // We'll talk about nested routes later.
+      const routes = [
+        { path: '/home', component: Home },
+        { path: '/about', component: About }
+      ]
+
+      // 3. Create the router instance and pass the `routes` option
+      // You can pass in additional options here, but let's
+      // keep it simple for now.
+      const router = new VueRouter({
+        routes: routes,
+        mode: 'history',
+         base: "../",
+         linkActiveClass: 'is-active'
+      })
+
+      // 4. Create and mount the root instance.
+      // Make sure to inject the router with the router option to make the
+      // whole app router-aware.
+      const app = new Vue({
+        router
+      }).$mount('#app')
+
+      // Now the app has started!
+
+
+
+</script>
 
 </body>
 </html>
