@@ -10,10 +10,15 @@
 <body>
     
         <div class="container">
-          <nav class="navbar" role="navigation" aria-label="main navigation">
+          <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
+              <a href=""class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
               <a class="navbar-item">
-                <img src="../images/yolked.png" width="112" height="28">
+                <img src="images/yolked.png" width="112" height="28">              
               </a>
           
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" :class="{'is-active': navBarIsActive}" @click="navBarIsActive = !navBarIsActive">
@@ -23,47 +28,22 @@
               </a>
             </div>
           
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div id="nav-links" class="navbar-menu">
               <div class="navbar-start">
-                <a class="navbar-item">
-                  Home
+                <a class="navbar-item" active-class="is-active">
+                  <router-link to="/home">Home</router-link>
                 </a>
           
-                <a class="navbar-item">
-                  Info
+                <a class="navbar-item " active-class="is-active">
+                  <router-link to="/about">About</router-link>
                 </a>
+                <router-view></router-view>
           
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
+                <a class="navbar-item">
                     Exercises
                   </a>
           
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                      Biceps
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Triceps
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Legs
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Chest
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Back
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Compound/Fullbody
-                    </a>
-                  </div>
-                </div>
+                
 
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
@@ -96,6 +76,7 @@
 
 
               </div>
+              
           
               <div class="navbar-end">
                 <div class="navbar-item">
@@ -114,6 +95,10 @@
       
         
 
-    
+<script src="index.js"></script>   
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+
 </body>
 </html>
