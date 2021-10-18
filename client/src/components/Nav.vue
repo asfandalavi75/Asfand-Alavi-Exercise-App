@@ -14,15 +14,15 @@
           
             <div id="navbar" class="navbar-menu" :class="{'is-active': isActive }">
               <div class="navbar-start">
-                <a class="navbar-item" href="/">
+                <a class="navbar-item" @click="home" actice-class="is-active">
                   Home
                 </a>
           
-                <a class="navbar-item" href="/about">
+                <a class="navbar-item" @click="about" actice-class="is-active">
                   Info
                 </a>
           
-                <a class="navbar-item" href="/exercises">
+                <a class="navbar-item" @click="exercises" actice-class="is-active">
                     Exercises
                   </a>
 
@@ -32,26 +32,26 @@
                   </a>
           
                   <div class="navbar-dropdown">
-                    <a class="navbar-item" href="/calorie">
+                    <a class="navbar-item" @click="calorie" actice-class="is-active">
                       Calorie Counter
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="/snacks">
+                    <a class="navbar-item" @click="snacks" actice-class="is-active">
                       Healthy Snacks
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="/recipes">
+                    <a class="navbar-item" @click="recipes" actice-class="is-active">
                       Healthy Recipes
                     </a>
                     
                   </div>
                 </div>
 
-                <a class="navbar-item" href="/profile">
+                <a class="navbar-item" @click="profile" actice-class="is-active">
                   Profile
                 </a>
 
-                <a class="navbar-item" href="/share">
+                <a class="navbar-item" @click="share" actice-class="is-active">
                   Share
                 </a>
 
@@ -73,6 +73,40 @@ export default {
     data(){
         return {
             isActive: false
+        }
+    },
+    methods: {
+        home(){
+            this.$router.push('/');
+            
+        },
+        about(){
+            this.$router.push('/about');
+            
+        },
+        exercises(){
+            this.$router.push('/exercises');
+            
+        },
+        calorie(){
+            this.$router.push('/calorie');
+            
+        },
+        snacks(){
+            this.$router.push('/snacks');
+            
+        },
+        recipes(){
+            this.$router.push('/recipes');
+            
+        },
+        profile(){
+            this.$router.push('/profile');
+            
+        },
+        share(){
+            this.$router.push('/share');
+            
         }
     },
     components: {
