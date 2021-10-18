@@ -1,13 +1,13 @@
 const list = [
     { 
-        firstName: 'Moshe',
-        lastName: 'Plotkin',
-        handle: '@JewPaltz',
+        firstName: 'Asfand',
+        lastName: 'alavi',
+        handle: '@newPaltz',
         pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo3I5GL9_Zd_LULXRIXTzRLlVESBnoGp8sw&usqp=CAU',
         password: 'me',
         isAdmin: true,
         emails: [
-            "plotkinm@newpaltz.edu"
+            "alavia1@newpaltz.edu"
         ],
         following: [ { handle: '@vp', isApproved: true }, { handle: '@johnsmith', isApproved: true }, ],
         get name(){ return this.firstName + ' ' + this.lastName },

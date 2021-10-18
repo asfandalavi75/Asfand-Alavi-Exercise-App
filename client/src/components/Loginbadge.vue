@@ -1,6 +1,6 @@
 <template>
     <div class="buttons" v-if="!Session.user">
-          <a class="button is-primary">
+          <a class="button is-warning">
             <strong>Sign up</strong>
           </a>
           <a class="button is-light" @click="login">
@@ -8,8 +8,12 @@
           </a>
     </div>
     <div v-else>
-        Hello {{name}} 
+        <p><strong>Hello {{name}}</strong></p>
+        <div class="button is-warning">
+            Logout
+        </div>
     </div>
+
 </template>
 
 <script>
@@ -28,7 +32,7 @@ export default {
     },
     computed:{
         name(){
-            return this.Session.user.FirstName + ' ' + this.Session.user.LastName;
+            return this.Session.user.FirstName;
         }
     }
 }

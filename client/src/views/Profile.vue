@@ -1,6 +1,24 @@
 <template>
     <div>
-        <figure class="image is-128x128" style="padding-top: 5%;">
+
+        <div class="home" style="position: fixed; top: -50%; left: -50%; width: 200%; height: 200%;">
+    
+
+          <img src="../assets/bg2.png" style="position: absolute; 
+          top: 0; 
+          left: 0; 
+          right: 0; 
+          bottom: 0; 
+          margin: auto; 
+          min-width: 50%;
+          min-height: 50%;">
+
+        </div>
+
+
+        <div class="container is-max-widescreen">
+          <div class = 'column'>
+            <figure class="image is-128x128" style="padding-top: 5%">
             <img class="is-rounded" src="../assets/8d2.jpg">
           </figure>
 
@@ -43,5 +61,12 @@
               </span>
             </div>
           </div>
+        <p class="control">
+            <button class="button">
+            Submit
+            </button>
+        </p>
+          </div>
+        </div>
     </div>
 </template>

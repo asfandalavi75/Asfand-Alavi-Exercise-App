@@ -1,0 +1,105 @@
+Fall 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(10 pts)
+
+
+
+
+
+
+(10 pts)
+EGC220-02  Digital Logic Fundamentals
+Assignment #5
+Due:  October 18, 2021
+
+Text:    Digital  Design   With  an  Introduction  to  the  Verilog  HDL,  VHDL,  and  System 
+Verilog — Mano and Ciletti, Pearson 2018
+
+Read  Chapter 3
+3.3 Four variable k-map — implicants, prime implicants, essential 1-cells, essential prime 
+implicants, sum-of-products simplification
+3.4 Product-of-sums simplification
+3.5 Don't care Conditions
+Chapter 4
+4.2 Combinational  Circuits
+4.3 Analysis of Combinational  Circuits
+4.4 Design Procedure
+4.5 Binary Adder-Subtractor — Half adder, Full adder, Binary adder, Binary subtractor
+4.8 Magnitude Comparator
+Problems:  Work all problems and submit the solution as one pdf file
+Prob. 1.
+Implement  the following  Boolean  function  I’, together with  the don’t-care conditions ri,
+using no more thun two NOR b'otos:
+F(A,  B, C,  D)  = 2(2, 4,  tl, 12. 14,)
+d [A,  B, C,  D)  = 2((1, 1, 5, 8)
+Assume that hoth the normal and complement inputs are available.
+
+Prob. 2.
+
+With the use of maps, find the simplest sum-of-products form of the function F = f.g, where
+f  =  abc’ + c'd  + a'cd’ + b'cd’
+and      g = (a + b + c’ + d’) (b’ + c’ + d) (a’ + c + d’)
+
+
+(20 pts)
+Prob. 3.
+Implement  the following four l3oolcan expressions with  three half  Bidders:
+ii   ——  A 9b R  96 C
+£ =  A’  BC.  +   AB’  C
+N =  AB C.’  +   (A’         B’)  C
+G =  AB C.
+
+Fall 2021
+
+
+(15 pts)    Prob. 4.
+Design a combinational circuit with three ioputgz,y,and z,and three outputs,@ B,  and C. When the 
+binary input is 0,1,2, or 3,thebinary output is one greater than the input.When the binary input is 
+4, 5, 6, or Z the binary output is two fern than the input.
+(15 pts)    Prob. 5.
+Design a half-subtractor circuit with ippats z and y and outputs D    and By.The circuit
+subtracts the bites—y and places the difference in D and the borrow in By.
+(a)   Deaign a full-subtracts circuit with tlixee inputs z, y, Bp and two outputs DiJ  and
+By.The cimuit subtracts z -y  —Mfg where By ñ the ipput borrow, By   ñ the output
+
+(15 pts)     Prob. 6.
+Consider the combinational ciluuit shovm in F'ig- P4 1.(HDL—seeProblem 4.49-)
+
+
+
+
+
+
+
+
+
+
+usr a‹t»ia ablema i6t›inary combinations of the four input variablezThen list
+the binary valum for TJ through Z'2 and outpu'•^i and N2 in the table.
+(15 pts)    Prob. 7.
+Dbtain the simplified Boolean expressions for output F and G in terms of  the input variables in 
+the circuit of       P4J.

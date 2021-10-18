@@ -59,18 +59,27 @@
               </div>
           
               <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-warning">
-                      <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                      Log in
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <div class="navbar-item">
+            <login-badge />
+        </div>
+     </div>
             </div>
           </nav>
 </template>
 
+<script>
+import LoginBadge from './LoginBadge';
+export default {
+    data(){
+        return {
+            isActive: false
+        }
+    },
+    components: {
+        LoginBadge,
+    }
+}
+</script>
+
+<style>
+</style>
