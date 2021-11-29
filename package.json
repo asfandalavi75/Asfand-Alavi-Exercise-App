@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd client && npm install",
     "dev": "nodemon --watch server server/index",
+    "build": "cd client && npm run build",
     "start": "node server/index"
   },
   "repository": {
