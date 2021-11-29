@@ -18,10 +18,10 @@
   </div>
       <div class="container is-max-widescreen" style="">
       <div class="card has-background-warning">
-          <form class="section" @submit.prevent="login()">
+    <form class="section" @submit.prevent="login()">
       <div class="field">
         <p class="control has-icons-left has-icons-right" style="padding:5%">
-            <input class="input" type="email" placeholder="Email" v-model="email" style="">
+            <input class="input" type="username" placeholder="Email" v-model="email" style="">
             <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
             </span>
@@ -52,7 +52,8 @@
 </template>
 
 <script>
-import Session from "../services/session";
+import Session from "../services/session.js";
+
 export default {
     data: ()=>({
         email: null,

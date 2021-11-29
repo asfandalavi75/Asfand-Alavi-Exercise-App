@@ -68,7 +68,7 @@
 </template>
 
 <script>
-import LoginBadge from './LoginBadge';
+import LoginBadge from '../components/Loginbadge.vue';
 export default {
     data(){
         return {

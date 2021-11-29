@@ -9,7 +9,7 @@
     </div>
     <div v-else>
         <p><strong>Hello {{name}}</strong></p>
-        <div class="button is-warning">
+        <div class="button is-warning" @click = "logout">
             Logout
         </div>
     </div>
@@ -27,7 +27,6 @@ export default {
     methods: {
         login(){
             this.$router.push('/login');
-            //this.Session.Login();
         }
     },
     computed:{
