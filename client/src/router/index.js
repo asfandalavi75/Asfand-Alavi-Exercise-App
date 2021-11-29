@@ -30,7 +30,8 @@ const routes = [
   {
     path: '/share',
     name: 'Share',
-    component: Share
+    component: Share,
+    meta: { requiresLogin: true}
   },
   {
     path: '/calorie',

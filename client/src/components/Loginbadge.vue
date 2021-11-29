@@ -9,7 +9,7 @@
     </div>
     <div v-else>
         <p><strong>Hello {{name}}</strong></p>
-        <div class="button is-warning">
+        <div class="button is-warning" @click = "logout">
             Logout
         </div>
     </div>
