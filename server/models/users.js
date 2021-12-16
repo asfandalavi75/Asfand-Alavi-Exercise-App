@@ -53,7 +53,7 @@ const list = [
         emails: [
             "john@smith.com"
         ],
-        following: [ { handle: '@vp', isApproved: true }, ],
+        following: [ { handle: '@Alavi5', isApproved: true }, ],
     },
 
 ];

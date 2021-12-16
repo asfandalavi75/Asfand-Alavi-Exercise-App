@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bulma'
 
-import { Notification, Config } from '@oruga-ui/oruga-next'
+import { Notification, Config, Autocomplete  } from '@oruga-ui/oruga-next'
 import '@oruga-ui/oruga-next/dist/oruga-full.css'
 
 import App from './App.vue'
@@ -14,4 +14,5 @@ createApp(App)
     .use(Config, {
         iconPack: 'fas'
     })
+    .use(Autocomplete)
     .mount('#app')

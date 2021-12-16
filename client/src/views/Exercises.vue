@@ -1,5 +1,13 @@
 <template>
     <div>
+        <section>
+          <p class="content"><b>Selected:</b> {{ selected }}</p>
+          <o-field label="Find an Exercise">
+            <o-autocomplete rounded expanded v-model="name" :data="filteredDataArray" placeholder="e.g. Push-up" icon="search" clearable @select="option => selected = option">
+              <slot name = "ex"> Enter Exercise</slot>
+            </o-autocomplete>
+          </o-field>
+        </section>
         <div class="columns" style="padding-top: 5%; padding-left: 5%;">
             <div class="column">
               <div class="card">
@@ -172,3 +180,32 @@
           </div>
     </div>
 </template>
+
+// <script>
+// const { ObjectId } = require('bson');
+// const { client } = require('../../../server/models/mongo');
+
+// const collection = client.db(process.env.MONGO_DB).collection('exercises');
+// module.exports.collection = collection;
+//   export default {
+//     data() {
+//       return {
+//         data: collection.find().toArray, 
+//         name: '',
+//         selected: null
+//       }
+//     },
+//     computed: {
+//       filteredDataArray() {
+//         return this.data.filter(option => {
+//           return (
+//             option
+//               .toString()
+//               .toLowerCase()
+//               .indexOf(this.name.toLowerCase()) >= 2
+//           )
+//         })
+//       }
+//     }
+//   }
+// </script>
